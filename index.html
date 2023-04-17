@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets /css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Git Cheat Sheet</h1>
+    </header>
+    <main>
+        <section class="first-sec">
+            <article class="stage">
+                <h2>STAGE & SNAPSHOT</h2>
+                <h3>git Status</h3>
+                <p>show modified files in working directory, staged for your next commit</p>
+                <h3>git add [file]</h3>
+                <p>add a file as it looks now to your next commit (stage)</p>
+                <h3>git reset [file]</h3>
+                <p>unstage a file while retaining the changes in working directory</p>
+                <h3>git diff</h3>
+                <p>diff of what is changed but not staged</p>
+                <h3>git commit -m “[descriptive message]”</h3>
+                <p>commit your staged content as a new commit snapshot</p>
+            </article>
+            <article class="setup">
+                <h2>SETUP & INIT</h2>
+                <h3>git init</h3>
+                <p>initialize an existing directory as a Git repository</p>
+                <h3>git clone [url]</h3>
+                <p>retrieve an entire repository from a hosted location via URL</p>
+            </article>
+            <article class="branch">
+                <h2>BRANCH & MERGE</h2>
+                <h3>git branch</h3>
+                <p>list your branches. a * will appear next to the currently active branch</p>
+                <h3>git branch [branch-name]</h3>
+                <p>create a new branch at the current commit</p>
+                <h3>git checkout</h3>
+                <p>switch to another branch and check it out into your working directory</p>
+                <h3>git merge [branch]</h3>
+                <p>merge the specified branch’s history into the current one</p>
+                <h3>git log</h3>
+                <p>show all commits in the current branch’s history</p>
+            </article>
+        </section>
+        <section class="second-sec">
+            <article class="inspect">
+                <h2>INSPECT & COMPARE</h2>
+                <h3>git log branchB..branchA</h3>
+                <p>show the commits on branchA that are not on branchB</p>
+                <h3>git log --follow [file]</h3>
+                <p>show the commits that changed file, even across renames</p>
+                <h3>git diff branchB...branchA</h3>
+                <p>show the diff of what is in branchA that is not in branchB</p>
+                <h3>git show [SHA]</h3>
+                <p>show any object in Git in human-readable format</p>
+            </article>
+            <article class="share">
+                <h2>SHARE & UPDATE</h2>
+                <h3>git remote add [alias] [url]</h3>
+                <p>add a git URL as an alias</p>
+                <h3>git fetch [alias]</h3>
+                <p>fetch down all the branches from that Git remote</p>
+                <h3>git merge [alias]/[branch]</h3>
+                <p>merge a remote branch into your current branch to bring it up to date</p>
+                <h3>git push [alias] [branch]</h3>
+                <p>Transmit local branch commits to the remote repository branch</p>
+                <h3>git pull</h3>
+                <p>fetch and merge any commits from the tracking remote branch</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
